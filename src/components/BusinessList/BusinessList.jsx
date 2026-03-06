@@ -1,12 +1,12 @@
 import Business from '../Business/Business';
 import './BusinessList.css';
 
-function BusinessList() {
+function BusinessList({ businesses }) {
     return (
-        <div> 
-            <Business />
-            <Business />
-            <Business />
+        <div>
+            {businesses.map(business => (
+                <Business key={business.id} business={business} />
+            ))}
         </div>
     );
 }

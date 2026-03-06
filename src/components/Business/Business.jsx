@@ -1,21 +1,21 @@
 import './Business.css';
-function Business() {
+function Business({business}) {
     return (
         <div className="Business">
             <div className="image-container">
-                <img src="https://picsum.photos/200" alt="restaurant" />
+                <img src={business.imageSrc} alt={business.name} />
             </div>
-            <h2>Restaurant Name</h2>
+            <h2>{business.name}</h2>
             <div className="Business-information">
                 <div className="Business-address">
-                    <p>123 Main Street</p>
-                    <p>New York City, NY</p> 
-                    <p>10001</p>
+                    <p>{business.address}</p>
+                    <p>{business.city}, {business.state}</p> 
+                    <p>{business.zipCode}</p>
                 </div>
                 <div className="Business-reviews">
-                    <h3 className="category">Sushi</h3>
-                    <h3 className="rating">4 stars</h3>
-                    <p>200 reviews</p>
+                    <h3 className="category">{business.category}</h3>
+                    <h3 className="rating">{business.rating}</h3>
+                    <p>{business.reviewCount}</p>
                 </div>
             </div>
         </div>
