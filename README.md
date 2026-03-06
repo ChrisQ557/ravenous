@@ -1,17 +1,28 @@
-# React + Vite
+# Ravenous
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A restaurant recommendation app built with React that lets users search for and discover nearby restaurants.
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ravenous is a Yelp-like web application where users can search for restaurants by keyword and location. The app displays relevant restaurant results including ratings, reviews, and address information to help users find their next favorite spot.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — component-based UI library
+- **JavaScript (ES6+)**
+- **HTML5 & CSS3**
+- **Vite** — local development server and build tool
+- **Git & GitHub** — version control and remote hosting
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ravenous
+- Scroll through the page to browse restaurant listings
+- Simulate a restaurant search using the search bar
+- View a list of mock restaurant data including name, address, category, rating, and review count
+
+## Future Work
+
+- Connect to the Yelp Fusion API to fetch real restaurant data
+- Implement live search with keyword and location inputs
+- Add sorting options (Best Match, Highest Rated, Most Reviewed)
+- Improve styling and responsiveness for mobile devices
